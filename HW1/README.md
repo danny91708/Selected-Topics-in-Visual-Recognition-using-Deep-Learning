@@ -1,6 +1,6 @@
 # Car brand classification
-[The homework website for Kaggle](https://www.kaggle.com/c/cs-t0828-2020-hw1)
-
+The homework website for [Kaggle](https://www.kaggle.com/c/cs-t0828-2020-hw1).
+![alt text](https://github.com/danny91708/Selected-Topics-in-Visual-Recognition-using-Deep-Learning/blob/HW1/architecture.jpg?raw=true)
 ## Hardware
 The following specs were used to create the original solution.
 - Ubuntu 16.04 LTS
