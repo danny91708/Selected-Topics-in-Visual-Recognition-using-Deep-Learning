@@ -27,7 +27,7 @@ dataset
   |         ├── 000001.jpg
   |         ├── 000002.jpg
   |         └── ...
-  └── training_labels
+  └── training_labels.csv
 ```
 
 ## Pretrained model
