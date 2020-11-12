@@ -1,6 +1,10 @@
 # Car brand classification
 The homework website for [Kaggle](https://www.kaggle.com/c/cs-t0828-2020-hw1).
-There are two streams in my architecture: Classification Stream and Attention Stream. Classification Stream just classifies the images by ResNet-50, while Attention Stream will focus on the discriminative regions and then classifies the images. The CMAB module is a great attention in recent years, so I use the CBAM module to produce the attention map. I also use the Spatial Keeping module to keep the spatial information.
+
+There are two streams in my architecture: Classification Stream and Attention Stream.
+Classification Stream just classifies the images by ResNet-50, while Attention Stream will focus on the discriminative regions and then classifies the images.
+The CMAB module is a great attention in recent years, so I use the CBAM module to produce the attention map.
+I also use the Spatial Keeping module to keep the spatial information.
 ![alt text](https://github.com/danny91708/Selected-Topics-in-Visual-Recognition-using-Deep-Learning/blob/main/HW1/architecture.png?raw=true)
 
 ## Hardware
@@ -16,6 +20,7 @@ The following specs were used to create the original solution.
 
 ## Dataset
 Download the car dataset [here](https://www.kaggle.com/c/cs-t0828-2020-hw1/data).
+
 After downloading the dataset, the data directory is structured as:
 ```
 dataset
@@ -34,6 +39,7 @@ dataset
 
 ## Pretrained model
 ResNet-50 is pretrained on ImageNet.
+
 You can download the pretrained model [here](https://drive.google.com/file/d/1RZSCxmEbZQrAajbt871x8rvbrkfyta_v/view?usp=sharing).
 
 ## Training
