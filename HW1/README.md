@@ -1,6 +1,8 @@
 # Car brand classification
 The homework website for [Kaggle](https://www.kaggle.com/c/cs-t0828-2020-hw1).
+There are two streams in my architecture: Classification Stream and Attention Stream. Classification Stream just classifies the images by ResNet-50, while Attention Stream will focus on the discriminative regions and then classifies the images. The CMAB module is a great attention in recent years, so I use the CBAM module to produce the attention map. I also use the Spatial Keeping module to keep the spatial information.
 ![alt text](https://github.com/danny91708/Selected-Topics-in-Visual-Recognition-using-Deep-Learning/blob/main/HW1/architecture.png?raw=true)
+
 ## Hardware
 The following specs were used to create the original solution.
 - Ubuntu 16.04 LTS
@@ -50,3 +52,7 @@ predict_csv
   ├── predict_epoch_2_combined.csv
   └── ...
 ```
+
+## Reference
+- https://etd.lib.nctu.edu.tw/cgi-bin/gs32/tugsweb.cgi/ccd=Qdkjbd/record?r1=2&h1=0
+- https://github.com/asdf2kr/BAM-CBAM-pytorch/blob/master/Models/attention.py
