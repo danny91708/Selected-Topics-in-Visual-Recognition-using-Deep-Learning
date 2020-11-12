@@ -60,5 +60,5 @@ predict_csv
 ```
 
 ## Reference
-- https://etd.lib.nctu.edu.tw/cgi-bin/gs32/tugsweb.cgi/ccd=Qdkjbd/record?r1=2&h1=0
+- https://etd.lib.nctu.edu.tw/cgi-bin/gs32/tugsweb.cgi?o=dnctucdr&s=id=%22GT070756044%22.&searchmode=basic
 - https://github.com/asdf2kr/BAM-CBAM-pytorch/blob/master/Models/attention.py
