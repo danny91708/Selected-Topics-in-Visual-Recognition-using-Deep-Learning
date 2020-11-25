@@ -1,6 +1,6 @@
 # Street View House Numbers Detection
 Object detection on the street view house numbers dataset implemented by Yolo v4.
-![alt text](https://github.com/danny91708/Selected-Topics-in-Visual-Recognition-using-Deep-Learning/blob/main/HW2/Numbers Detection.png?raw=true)
+![alt text](https://github.com/danny91708/Selected-Topics-in-Visual-Recognition-using-Deep-Learning/blob/main/HW2/NumbersDetection.png?raw=true)
 
 ## Hardware
 The following specs were used to create the original solution.
