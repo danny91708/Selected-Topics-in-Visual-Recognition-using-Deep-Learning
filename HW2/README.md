@@ -19,6 +19,11 @@ The following specs were used to create the original solution.
 
 * python 3.6
 
+## Git clone Yolo v4
+```
+$ git clone https://github.com/AlexeyAB/darknet
+```
+
 ## Compile
 ### How to compile on Linux/macOS (using `CMake`)
 
@@ -59,7 +64,7 @@ darknet-master
   ├── data
        ├── obj
             ├── train
-            |    ├── 
+            |    ├── digitStruct.mat
             |    ├── 1.png
             |    ├── 2.png
             |    └── ...
@@ -69,11 +74,15 @@ darknet-master
                  └── ...
 ```
 
-## Data preprocessing
-To make yolov4 get the annotations of each image, we convert `digitStruct.mat` into `.txt` file for each image, and produce `train_obj.txt` and `test_obj.txt` storing the path of training and test images by running the following command:
+## Preprocessing
+0. Download the pretrained weights [here](https://drive.google.com/file/d/1_QpkXEbhclqzjDgtYtqe7GJUta7ZKHi0/view?usp=sharing), anf put `yolov4.conv.137` into `darknet-master/build/darknet/x64`.
+1. Put `obj.data` and `obj.name` into `darknet-master/data`.
+2. Put `yolo-obj.cfg` into `darknet-master/cfg`.
+3. To make yolov4 get the annotations of each image, we convert `digitStruct.mat` into `.txt` file for each image, and produce `train_obj.txt` and `test_obj.txt` storing the path of training and test images by running the following command:
 ```
 $ python annotation_converter.py 
 ```
+
 
 ## Training
 To train a model from scratch, run the following command:
