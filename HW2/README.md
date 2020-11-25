@@ -90,6 +90,7 @@ To train a model from scratch, run the following command:
 $ ./darknet detector train data/obj.data cfg/yolo-obj.cfg build/darknet/x64/yolov4.conv.137 -dont_show -map -gpus 0,1
 ```
 
+The trained weights file is [here](https://drive.google.com/file/d/1YthminCrK2qNinLh7awFHOxp5hyypONo/view?usp=sharing), and the test result is mAP 0.44583.
 To know more training details, please check [Yolo v4](https://github.com/AlexeyAB/darknet).
 
 ## Test
