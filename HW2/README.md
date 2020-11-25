@@ -1,5 +1,5 @@
 # Street View House Numbers Detection
-Object detection on the street view house numbers dataset implemented by Yolo v4.
+Object detection on the street view house numbers dataset implemented with Yolo v4.
 ![alt text](https://github.com/danny91708/Selected-Topics-in-Visual-Recognition-using-Deep-Learning/blob/main/HW2/NumbersDetection.png?raw=true)
 
 ## Hardware
@@ -90,7 +90,7 @@ To train a model from scratch, run the following command:
 $ ./darknet detector train data/obj.data cfg/yolo-obj.cfg build/darknet/x64/yolov4.conv.137 -dont_show -map -gpus 0,1
 ```
 
-To know more training detail, please check [Yolo v4](https://github.com/AlexeyAB/darknet).
+To know more training details, please check [Yolo v4](https://github.com/AlexeyAB/darknet).
 
 ## Test
 To test a model, choose the weights in the folder `backup`, and run the following command:
@@ -101,7 +101,7 @@ $ ./darknet detector test data/obj.data cfg/yolo-obj.cfg backup/yolo-obj_final.w
 The result will be stored in `result.json`.
 
 ## Make Submission
-To satisfy the rule of submission, conver `result.json` to the specific format by running the following command:
+To satisfy the rule of submission, convert `result.json` to the specific format by running the following command:
 ```
 $ python json_converter.py
 ```
