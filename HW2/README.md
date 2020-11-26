@@ -92,6 +92,8 @@ $ ./darknet detector train data/obj.data cfg/yolo-obj.cfg build/darknet/x64/yolo
 
 The trained weights file is [here](https://drive.google.com/file/d/1YthminCrK2qNinLh7awFHOxp5hyypONo/view?usp=sharing), and the test result is mAP 0.44583.
 
+Here is the training chart.
+![alt text](https://github.com/danny91708/Selected-Topics-in-Visual-Recognition-using-Deep-Learning/blob/main/HW2/trainingChart.png?raw=true)
 To know more training details, please check [Yolo v4](https://github.com/AlexeyAB/darknet).
 
 ## Test
