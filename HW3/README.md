@@ -144,50 +144,33 @@ Tiny VOC dataset contains only 1,349 training images, 100 test images with 20 co
 
 
 ## Preprocessing
-The json files provided by TAs are the COCO dataset style, so they can be used directly.
-Just need to 
+The json files provided by TAs are the COCO dataset style, so they can be used for DetectoRS directly.
 
-
-
-
-
-
-
-
-
-
-
-1. Put `detectors_cascade_rcnn_r50_1x_hw3.py` into `mmdetection-master/configs/detectors/`.
+Just need to add a new cfg file by putting `detectors_cascade_rcnn_r50_1x_hw3.py` into `mmdetection-master/configs/detectors/`.
 
 
 ## Training
-To train a model from scratch, run the following command:
+To train a model from scratch with 2 GPUs, run the following command:
 ```
-$ ./darknet detector train data/obj.data cfg/yolo-obj.cfg build/darknet/x64/yolov4.conv.137 -dont_show -map -gpus 0,1
+$ bash ./tools/dist_train.sh configs/detectors/detectors_cascade_rcnn_r50_1x_hw3.py 2
 ```
 
-The trained weights file is [here](https://drive.google.com/file/d/1YthminCrK2qNinLh7awFHOxp5hyypONo/view?usp=sharing), and the test result is mAP 0.44583.
+The trained weights file is [here](), and the test result is mAP 0.44583.
 
-Here is the training chart.
-![alt text](https://github.com/danny91708/Selected-Topics-in-Visual-Recognition-using-Deep-Learning/blob/main/HW2/trainingChart.png?raw=true)
-To know more training details, please check [Yolo v4](https://github.com/AlexeyAB/darknet).
+To know more training details, please check [mmdetection](https://github.com/open-mmlab/mmdetection/blob/master/docs/2_new_data_model.md).
 
 ## Test
-To test a model, choose the weights in the folder `backup`, and run the following command:
+To test a model, choose the weights in the folder `work_dirs/detectors_cascade_rcnn_r50_1x_hw3`, and run the following command:
 ```
-$ ./darknet detector test data/obj.data cfg/yolo-obj.cfg backup/yolo-obj_final.weights -ext_output -dont_show -out result.json < data/test_obj.txt
+$ bash ./tools/dist_test.sh configs/detectors/detectors_cascade_rcnn_r50_1x_hw3.py work_dirs/detectors_cascade_rcnn_r50_1x_hw3/epoch_20.pth 2 --format-only --options "jsonfile_prefix=./DetectoRS_results"
 ```
 
-The result will be stored in `result.json`.
+The results will be stored in `DetectoRS_results.segm.json` and `DetectoRS_results.bbox.json`.
 
 ## Make Submission
-To satisfy the rule of submission, convert `result.json` to the specific format by running the following command:
-```
-$ python json_converter.py
-```
+The format of `DetectoRS_results.segm.json` is the COCO dataset style, so we can submit it directly.
 
-It will produce a new json file for submission.
 
 ## Reference
-- https://github.com/AlexeyAB/darknet
+- https://github.com/joe-siyuan-qiao/DetectoRS
 
