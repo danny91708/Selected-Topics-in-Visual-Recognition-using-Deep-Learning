@@ -173,4 +173,4 @@ The format of `DetectoRS_results.segm.json` is the COCO dataset style, so we can
 
 ## Reference
 - https://github.com/joe-siyuan-qiao/DetectoRS
-
+- https://github.com/open-mmlab/mmdetection
