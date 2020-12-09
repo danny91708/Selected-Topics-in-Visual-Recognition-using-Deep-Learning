@@ -155,14 +155,14 @@ To train a model from scratch with 2 GPUs, run the following command:
 $ bash ./tools/dist_train.sh configs/detectors/detectors_cascade_rcnn_r50_1x_hw3.py 2
 ```
 
-The trained weights file is [here](), and the test result is mAP 0.44583.
+The trained weights file is [here](https://drive.google.com/file/d/1CJJg_1K8t7JintHLLXq9mTEurPFC0Dbt/view?usp=sharing), and the test result is mAP 0.53293.
 
 To know more training details, please check [mmdetection](https://github.com/open-mmlab/mmdetection/blob/master/docs/2_new_data_model.md).
 
 ## Test
 To test a model, choose the weights in the folder `work_dirs/detectors_cascade_rcnn_r50_1x_hw3`, and run the following command:
 ```
-$ bash ./tools/dist_test.sh configs/detectors/detectors_cascade_rcnn_r50_1x_hw3.py work_dirs/detectors_cascade_rcnn_r50_1x_hw3/epoch_20.pth 2 --format-only --options "jsonfile_prefix=./DetectoRS_results"
+$ bash ./tools/dist_test.sh configs/detectors/detectors_cascade_rcnn_r50_1x_hw3.py work_dirs/detectors_cascade_rcnn_r50_1x_hw3/epoch_12.pth 2 --format-only --options "jsonfile_prefix=./DetectoRS_results"
 ```
 
 The results will be stored in `DetectoRS_results.segm.json` and `DetectoRS_results.bbox.json`.
