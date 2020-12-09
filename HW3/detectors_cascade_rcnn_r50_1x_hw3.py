@@ -41,5 +41,3 @@ data = dict(
         ann_file='/media/intel/G/Hung/VRDL/HW3/dataset/test.json',
         img_prefix='/media/intel/G/Hung/VRDL/HW3/dataset/test_images/',
         classes=classes))
-
-total_epochs = 20
