@@ -37,7 +37,17 @@ SRFBN_CVPR19-master
 ```
 
 ## Data augmentation
-Run `./scripts/Prepare_TrainData_HR_LR.m` in Matlab or `matlab -nodisplay -nosplash -nodesktop -r "run('scripts/Prepare_TrainData_HR_LR.m');exit;" | tail -n +11` in the shell to generate HR/LR training pairs with corresponding degradation model and scale factor. (**Note**: Please place generated training data to **SSD (Solid-State Drive)** for fast training)
+Run the command in Matlab:
+```shell
+./scripts/Prepare_TrainData_HR_LR.m
+```
+
+or just run the command in the shell:
+```shell
+matlab -nodisplay -nosplash -nodesktop -r "run('scripts/Prepare_TrainData_HR_LR.m');exit;" | tail -n +11` 
+```
+
+to generate HR/LR training pairs with corresponding degradation model and scale factor. (**Note**: Please place generated training data to **SSD (Solid-State Drive)** for fast training)
 
 ## Pretrained model
 **No** pretrained model is used! I train the model from scratch.
