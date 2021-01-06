@@ -1,7 +1,7 @@
 # Image super-resolution
 Implement image super-resolution with [SRFBN](https://github.com/Paper99/SRFBN_CVPR19).
 
-![alt text](https://github.com/danny91708/Selected-Topics-in-Visual-Recognition-using-Deep-Learning/blob/main/HW4/superResolution.png?raw=true)
+![alt text](https://github.com/danny91708/Selected-Topics-in-Visual-Recognition-using-Deep-Learning/blob/main/HW4/figs/superResolution.png?raw=true)
 
 ## Hardware
 The following specs were used to create the original solution.
@@ -71,7 +71,20 @@ x3
 
 ## Results
 I got the PSNR 25.831 dB for x3 upscaling.
-![](figs/img_004_BI.jpg)
+![](figs/results/00.png)
+![](figs/results/01.png)
+![](figs/results/02.png)
+![](figs/results/03.png)
+![](figs/results/04.png)
+![](figs/results/05.png)
+![](figs/results/06.png)
+![](figs/results/07.png)
+![](figs/results/08.png)
+![](figs/results/09.png)
+![](figs/results/10.png)
+![](figs/results/11.png)
+![](figs/results/12.png)
+![](figs/results/13.png)
 
 ## Reference
 - https://github.com/Paper99/SRFBN_CVPR19
