@@ -36,7 +36,7 @@
         "in_channels": 3,
         "out_channels": 3,
         "num_steps": 4,
-        "num_groups": 8
+        "num_groups": 6
     },
 
     "solver": {
