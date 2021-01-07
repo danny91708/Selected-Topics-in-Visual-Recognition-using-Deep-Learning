@@ -80,7 +80,7 @@ x3
 4. Put all the images to your own folder in the [google drive link](https://drive.google.com/drive/folders/1sbb527to9S8Ej-25QOb0IrQ-d2TDBcYK).
 
 ## Results
-I got the PSNR 25.831 dB for x3 upscaling.
+I got the PSNR 25.922 dB for x3 upscaling.
 ![](figs/results/00.png)
 ![](figs/results/01.png)
 ![](figs/results/02.png)
